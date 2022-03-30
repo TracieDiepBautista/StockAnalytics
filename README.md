@@ -30,6 +30,8 @@
     - Python
     - PostgreSQL 
     - SQL database
+    - chart.js (javaScript library)
+    - 
     - Link to dataset: https://www.kaggle.com/code/faressayah/stock-market-analysis-prediction-using-lstm/data
     
     
