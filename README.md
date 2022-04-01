@@ -16,9 +16,9 @@
 
     i) Brandon Jhun
     ii) James Yoo
-    iii) Luan Ng
-    iv) Ariana F
-    v) Tracie B. 
+    iii) Luan Ngyuen
+    iv) Ariana Feemster
+    v) Tracie Diep Bautista
     
 ```diff
 - Tools and resources used to complete the project:
