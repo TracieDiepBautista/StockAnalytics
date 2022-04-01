@@ -1,9 +1,9 @@
-body {
-    padding-top: 56px;
-    font-weight: 300;
-    font-style: whitesmoke;
-    letter-spacing: 0.03em;
-    background-color:black transparent;
+/* body {
+    padding-top: 56px; */
+    /* font-weight: 300; */
+    /* font-style: whitesmoke; */
+    /* letter-spacing: 0.03em; */
+    /* background-color:black;
   }
   
   nav.navbar {
@@ -14,7 +14,6 @@ body {
     font-weight: 500;
     letter-spacing: .065em;
   }
-  
   
   .navbar-nav .nav-link {
       letter-spacing: .035em;
@@ -135,4 +134,46 @@ body {
     background-size: 200;
     background-repeat: no-repeat;
     background-position: center;
+  } */
+
+
+  /* Change Bullet points from dots to dashes */
+  /* ul {
+    list-style-type: none;
+    color:#999999;
+  }
+  ul li:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -20px;
+  } */
+
+
+  /* Change Bullet points from dots to dashes */
+  /* ul {
+    margin: 0;
+  }
+  ul.dashed {
+    list-style-type: none;
+  }
+  ul.dashed > li {
+    text-indent: -20px;
+  }
+  ul.dashed > li:before {
+    content: "-";
+    text-indent: -20px;
+  } */
+
+  .content-banner {
+    height: 400px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 160px;
+    position: relative;
+    user-select: none;
   }
