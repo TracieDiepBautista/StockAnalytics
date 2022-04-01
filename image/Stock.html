@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <title>Stock</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    
     
     <!-- Style Sheet -->
-    <link rel="stylesheet" type = "text/css" href="style.css">
-  </head>
+    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css?_cacheOverride=1648784795719"><link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/StockAnalytics_PandasGroup/style.css?_cacheOverride=1648784795720"></head>
 
   <body>
-    <section class = "content-banner" style="background-image: url('image/stock-market-banner.png');">
-      <!-- <p>Mockplus - Design Faster. Collaborate Better.</p>
-      <p>Prototype, design, collaborate, and design systems all in Mockplus</p>  -->
+    <section class="content-banner" style="background-image: url('image/stock-market-banner.png');"> <!-- class=“content-banner” -->
+      <p>Mockplus - Design Faster. Collaborate Better.</p>
+      <p>Prototype, design, collaborate, and design systems all in Mockplus</p> 
       <!-- <a href=“/start” class=“banner-btn posts-btn” onclick=“ga(‘send’, ‘event’, ‘Mockplus-sign-up1’, ‘click’, ‘Mockplus-home’, 1);“>Get Started for Free</a> -->
     </section>
+    <!-- <img src="image/stock-market-banner.png" class="img-fluid" alt="Responsive image"/> -->
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">Pandas Group</a>
+    <!-- <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">INTRODUCTION</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -35,9 +36,7 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-
-          <!-- Navbar with individual items listed out -->
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="#one">Technology</a>
           </li>
           <li class="nav-item">
@@ -48,21 +47,10 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#four">Finance</a>
-          </li> -->
-
-          <!-- Navbar with dropdown listing out each item -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id = "navbardrop" data-toggle = "dropdown" href="#">Industry</a>
-            <div class = "dropdown-menu">
-                <a class = "dropdown-item" href = "#">Technology</a>
-                <a class = "dropdown-item" href = "#">Automobile</a>
-                <a class = "dropdown-item" href = "#">Pharmaceutical</a>
-                <a class = "dropdown-item" href = "#">Finance</a>
-            </div>
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
     <main role="main" class="container-fluid">
       <div class="row no-gutters">
@@ -76,14 +64,19 @@
           <div class="col">
             <div>
                 <p>
-                  <ul>
-                    - Pandas Consulting Group is hired to deeply dive into a stock market moderate set of data to find the trends of price movements and consult the Board of Investment on what the data is telling about. 
+                  </p><ul>
+                    - Pandas Consulting Group is hired to deeply dive 
+into a stock market moderate set of data to find the trends of price 
+movements and consult the Board of Investment on what the data is 
+telling about. 
                   </ul>
                   <ul>
                     - The story will be told by interactive visualization website.
                   </ul>
                   <ul>
-                    - The next level of this Project will be: Stock Price Prediction on a specific one and consult the Investors the potentiality of purshasing.
+                    - The next level of this Project will be: Stock 
+Price Prediction on a specific one and consult the Investors the 
+potentiality of purshasing.
                   </ul>
                   
                   <ul>
@@ -110,7 +103,7 @@
                     <li>Tracie Bautista Nguyen</li>
                     <li>Luan Nguyen</li>
                   </ul>
-                </p>
+                <p></p>
             </div>
           </div>
         </div>
@@ -168,9 +161,42 @@
       </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-</html>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

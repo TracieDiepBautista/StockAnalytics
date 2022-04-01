@@ -165,7 +165,7 @@
   } */
 
   .content-banner {
-    height: 500px;
+    height: 400px;
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -173,7 +173,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 100px;
+    padding-top: 0px;
     position: relative;
     user-select: none;
   }
