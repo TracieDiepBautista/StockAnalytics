@@ -16,7 +16,7 @@
 
     i) Brandon Jhun
     ii) James Yoo
-    iii) Luan Ngyuen
+    iii) Luan Nguyen
     iv) Ariana Feemster
     v) Tracie Diep Bautista
     
@@ -34,4 +34,19 @@
     - 
     - Link to dataset: https://www.kaggle.com/code/faressayah/stock-market-analysis-prediction-using-lstm/data
     
+    
+```diff
+- Repo structure: 
+```
+
+
+    i) readme.md: this file with summary of the project and repo
+    ii) Roadmap_TaskList: Mood & Tone direction and Project tasklists with timeline management
+    iii) resources: data sources and other manipulated results
+    iv)pandasDatamanipulation_jy.ipynb: codes to manipulate big data and connect to SQL database
+    v) index.html: codes for main website
+    vi) style.css: codes for website styling and formating
+    vii) app.py: codes to make api for json results
+    viii) plot.js: codes for data analysis and interractive visualization
+    ix) images: images used for web design
     
