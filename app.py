@@ -11,23 +11,26 @@ from flask import Flask, jsonify
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///allstock.db")
+engine = create_engine("sqlite:///resources/allstock.sqlite")
+connection = engine.connect()
+
+# Execute sql query
+stocks = engine.execute("SELECT * FROM Stocks LIMIT 1000").all()
 
 # reflect an existing database into a new model
 Base = automap_base()
+
 # reflect the tables
 Base.prepare(engine, reflect=True)
 
-Base.classes.keys()
-
-# Save reference to the table
-Stocks = Base.classes.stocks
+print(Base.classes.keys())
+# stocks = Base.classes.Stocks
+# print(stocks)
 
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
-
 
 #################################################
 # Flask Routes
@@ -38,49 +41,36 @@ def welcome():
     """List all available api routes."""
     return (
         f"Available Routes:<br/>"
-        f"/api/v1.0/stocks<br/>"
+        f"/api/v1.0/all_stocks<br/>"
     )
 
-
-@app.route("/api/v1.0/stocks")
+@app.route("/api/v1.0/all_stocks")
 def names():
-    # Create our session (link) from Python to the DB
+    # Create our session (link) from Python to the sqlite
     session = Session(engine)
 
     """Return a list of all stocks"""
-    # Query all passengers
-    results = session.query(Stocks.date, Stocks.volume, Stocks.Symbol, Stocks.Name, Stocks.Industry).all()
+    # Query all stocks
+    results = stocks
 
     session.close()
 
-    # Convert list of tuples into normal list
-    all_names = list(np.ravel(results))
+    all_stocks = []
+    for index, date, open_price, high_price, low_price, close_price, volume, Symbol, Name, Industry in results:
+        stock_dict = {}
+        # stock_dict["index"] = index
+        stock_dict["date"] = date
+        stock_dict["open"] = open_price
+        stock_dict["high"] = high_price
+        stock_dict["low"] = low_price
+        stock_dict["close"] = close_price
+        stock_dict["volume"] = volume
+        stock_dict["symbol"] = Symbol
+        stock_dict["name"] = Name
+        stock_dict["industry"] = Industry
+        all_stocks.append(stock_dict)
 
-    return jsonify(all_names)
-
-
-# @app.route("/api/v1.0/passengers")
-# def passengers():
-#     # Create our session (link) from Python to the DB
-#     session = Session(engine)
-
-#     """Return a list of passenger data including the name, age, and sex of each passenger"""
-#     # Query all passengers
-#     results = session.query(Passenger.name, Passenger.age, Passenger.sex).all()
-
-#     session.close()
-
-#     # Create a dictionary from the row data and append to a list of all_passengers
-#     all_passengers = []
-#     for name, age, sex in results:
-#         passenger_dict = {}
-#         passenger_dict["name"] = name
-#         passenger_dict["age"] = age
-#         passenger_dict["sex"] = sex
-#         all_passengers.append(passenger_dict)
-
-#     return jsonify(all_passengers)
-
+    return jsonify(all_stocks)
 
 if __name__ == '__main__':
     app.run(debug=True)
