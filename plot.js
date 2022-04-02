@@ -1,32 +1,32 @@
 
 // initial page (Home page)
 // FUNCTION 1, set init() for dashboard and do dropdown button
-function init() {
+// function init() {
 
-  // select dropdown menu 
-  var dropdown = d3.select("navbardrop");
+//   // select dropdown menu 
+//   var dropdown = d3.select("navbardrop");
   
-  // read the data 
-  d3.json("finance.json").then((data)=> {
-    console.log(data)
+//   // read the data 
+//   d3.json("finance.json").then((data)=> {
+//     console.log(data)
   
-    // get the id data to the dropdwown menu
-    data.names.forEach(function(name) {
-        dropdown.append("option").text(name).property("value",name);
-    });
-    getPriceInfo("Finance")
-    tracie("Finance")
-  });
-  }
+//     // get the stockname data to the dropdwown menu
+//     data.names.forEach(function(name) {
+//         dropdown.append("option").text(name).property("value",name);
+//     });
+//     getPriceInfo("Finance")
+//     tracie("Finance")
+//   });
+//   }
   
-  init();
+//   init();
   
   // Function 4, to get the necessary data for demographic box
   
   function getPriceInfo(id) {
   
     // read the json file to get data
-        d3.json("finance.json").then((data)=> {
+        d3.json("bank.json").then((data)=> {
   
     // get the metadata info for the demographic panel
           var closeprice = data.close;
@@ -36,7 +36,7 @@ function init() {
           var prices = closeprice.filter(meta => meta.id.toString() === id)[0];
   
           // select demographic panel to put data
-          var porfolioInfo = d3.select("#sample-metadata");
+          // var porfolioInfo = d3.select("#sample-metadata");
             
          // empty the box info panel each time before getting new stock info
           porfolioInfo.html("");
@@ -62,55 +62,101 @@ function init() {
   // Create the 1st function to get data set out and use further:
   // & use d3 to call the data from json file and put them in a place we name "data" to use further
   
-  // Function 5: to get id, sample_values, otu_ids, otu_labels of TOP 10
+//Function for Bank industry: 
   
-  function tracie(StockValue) {
+  function tracie(BankValue) {
     // var selector = d3.select("#selDataset");
-      d3.json("bank.json").then((data) => {
+      d3.json("bank.json").then((databank) => {
         // console.log(data)
   
-        var closeprices = data.close
-        console.log(closeprices)
+        var bankprices = databank.close
+        console.log(bankprices)
   
-        var volumes = data.volume
-        console.log(volumes)
+        var bankvolumes = databank.volume
+        console.log(bankvolumes)
 
-        var timeseries = data.date
+        var banktimedate = databank.date
+
+        var bankname = databank.Name
         
-        var filteredprice = closeprice.filter(priceObj => priceObj.close == StockValue)[1]
+        // var filteredprice = closeprice.filter(priceObj => priceObj.close == StockValue)[1]
   
-        var filteredvolumes = volumes.filter(volumeObj => volumeObj.id == StockValue)[1]
-  
+        // var filteredvolumes = volumes.filter(volumeObj => volumeObj.id == StockValue)[1]
      
-        var otu_id = filteredSample.otu_ids;
-        console.log(otu_id)
-        
-        var otu_labels = filteredSample.otu_labels;
-        console.log(otu_labels)
-        
-        var sample_value = filteredSample.sample_values;
-        console.log(sample_value)
-  
-        var yvalue = otu_id.slice(0,10).map(otu_id=> `OTU ${otu_id}`).reverse()
-  
-      // now create BAR CHART with above 3 arrays
-      // Create a function for plotting first: 
-      
   // create a Trace for plotting:
-        var bar_values = [{
-            x : sample_value.slice(0,10).reverse(),
-            y : yvalue,
-            text: otu_labels.slice(0,10).reverse(),
-            type: "bar",
-            orientation: "h",
-            marker: {color: "lightsalmon"},
+        var bank_line_values = [{
+            x : banktimedate,
+            y : bankprices,
+            text: bankname,
+            type: "line",
+            marker: {color: "red"},
         }]
         
       // define the bar layout format: 
-        var bar_format = {
-            title: "Top 10 Microbial Species in Belly Button",
-            // xaxis: "Bacteria Sample Values",
-            // yaxis: "OTU IDs"
+        var bank_line_format = {
+            title: "15 Stocks Trends in Banking Industry",
+            xaxis: "Timeseries (one-year 2018)",
+            yaxis: "Close Prices"
         }
         
-        Plotly.newPlot("bar", bar_values, bar_format)
+        Plotly.newPlot("line", bank_line_values, bank_line_format)
+
+// Function for tech industry:
+
+  function Luan(TechStocks)
+      d3.json("tech.json").then((datatech) => {
+        // console.log(data)
+
+        var techprices = datatech.close
+        console.log(techprices)
+
+        var techvolumes = datatech.volume
+        console.log(techvolumes)
+
+        var techtimedate = datatech.date
+
+        var techname = datatech.Name
+
+        // create a Trace for plotting:
+        var tech_line_values = [{
+          x : techtimedate,
+          y : techprices,
+          text: techname,
+          type: "line",
+          marker: {color: "green"},
+      }]
+      
+    // define the bar layout format: 
+      var tech_line_format = {
+          title: "7 Stocks Trends in Technology Industry",
+          xaxis: "Timeseries (one-year 2018)",
+          yaxis: "Close Prices"
+      }
+      
+      Plotly.newPlot("line", tech_line_values, tech_line_format)
+
+//Function for Pharmaceutical industry:
+      
+  function James(PharmValue) {
+        // var selector = d3.select("#selDataset");
+          d3.json("pharm.json").then((datapharm) => {
+
+
+  
+      // create a Trace for plotting:
+      var pharm_line_values = [{
+        x : pharmtimedate,
+        y : pharmprices,
+        text: pharmname,
+        type: "line",
+        marker: {color: "blue"},
+    }]
+    
+  // define the bar layout format: 
+    var pharm_line_format = {
+        title: "7 Stocks Trends in Pharmaceutical Industry",
+        xaxis: "Timeseries (one-year 2018)",
+        yaxis: "Close Prices"
+    }
+    
+    Plotly.newPlot("line", pharm_line_values, pharm_line_format)
