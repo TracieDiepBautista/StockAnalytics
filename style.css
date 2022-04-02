@@ -162,9 +162,19 @@
   ul.dashed > li:before {
     content: "-";
     text-indent: -20px;
-  } */
+  }
 
-  .content-banner {
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:1.5cm;
+  color: aliceblue
+}
+
+ .content-banner {
     height: 500px;
     text-align: center;
     background-size: contain;
@@ -177,3 +187,5 @@
     position: relative;
     user-select: none;
   }
+
+    
