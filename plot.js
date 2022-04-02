@@ -84,6 +84,7 @@
         // var filteredvolumes = volumes.filter(volumeObj => volumeObj.id == StockValue)[1]
      
   // create a Trace for plotting:
+
         var bank_line_values = [{
             x : banktimedate,
             y : bankprices,
@@ -100,6 +101,29 @@
         }
         
         Plotly.newPlot("line", bank_line_values, bank_line_format)
+
+  // create a trace for BUBBLE chart: 
+
+        var bubble_values = [{
+          x: otu_id,
+          y: sample_value,
+          text: otu_labels,
+          mode: "markers",
+          marker: {
+              color: otu_id,
+              size: sample_value,
+              colorscale: "continent"
+        }
+      }]
+
+        // Define bubble layout format:   
+        var layout = {
+          title: "Belly Button Samples",
+          xaxis: {title: "OTU IDs"},
+          yaxis: {title: "Sample Values"}
+        }
+
+        Plotly.newPlot("bubble", bubble_values, layout)
 
 // Function for tech industry:
 
@@ -140,8 +164,6 @@
   function James(PharmValue) {
         // var selector = d3.select("#selDataset");
           d3.json("pharm.json").then((datapharm) => {
-
-
   
       // create a Trace for plotting:
       var pharm_line_values = [{
