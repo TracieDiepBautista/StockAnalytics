@@ -1,0 +1,183 @@
+date,open,high,low,close,volume,Symbol,Name,Industry
+2018-01-02,61.4,61.51,60.84,61.31,6472651,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-03,61.21,61.505,60.7,61.36,7433967,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-04,61.0,61.82,60.78,61.75,6403211,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-05,61.87,62.175,61.48,61.89,6113360,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-08,61.78,62.2,61.21,61.91,4663711,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-09,61.87,62.1,61.55,61.85,5156771,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-10,61.52,62.07,61.18,62.01,5096335,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-11,61.99,62.52,61.8,62.47,6591063,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-12,62.75,63.22,62.52,62.81,5489236,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-16,61.75,61.86,59.42,59.92,14471659,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-17,60.33,62.0,60.28,61.85,10608482,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-18,61.81,61.9,61.095,61.83,7904177,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-19,62.1,62.42,61.56,62.28,7490267,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-22,62.29,63.425,62.02,63.28,6748074,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-23,62.99,63.68,62.8,63.43,6459887,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-24,63.71,64.0,63.14,63.76,6430049,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-25,64.0,64.26,63.2,63.52,6183219,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-26,63.93,64.731,63.63,64.25,6727310,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-29,64.12,64.9599,64.08,64.43,6763254,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-30,63.93,64.61,63.31,63.96,5847968,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-31,63.96,64.03,61.935,62.6,8886885,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-02-01,62.18,62.98,61.945,62.8,7132976,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-02-02,62.89,64.29,62.85,63.48,11719210,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-02-05,65.43,65.89,60.93,60.96,23181859,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-02-06,59.83,61.205,58.44,60.9,18286290,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-02-07,60.64,62.77,60.3,62.63,12176593,BMY,Bristol-Myers Squibb Company,Pharmaceuticals
+2018-01-02,139.66,139.95,138.72,139.23,6842124,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-03,139.36,140.68,138.9,140.56,5350496,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-04,140.45,141.14,140.22,140.55,4837642,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-05,140.69,141.82,140.281,141.71,6158754,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-08,141.7,142.0,140.92,141.89,5129798,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-09,142.37,145.68,142.26,144.14,8897002,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-10,143.55,144.155,143.32,143.97,6558622,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-11,144.13,144.9,143.69,144.79,4962160,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-12,144.99,146.42,144.9,145.76,5450570,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-16,146.42,148.06,146.03,146.86,8804005,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-17,147.84,148.32,145.48,146.98,10619654,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-18,146.93,147.44,145.97,146.92,5554815,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-19,147.46,147.65,146.42,147.36,8738791,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-22,147.01,148.14,146.72,148.14,7010438,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-23,146.96,147.44,141.62,141.83,17473631,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-24,143.5,143.56,141.8,142.07,13034368,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-25,142.31,144.66,142.2105,144.4,7938846,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-26,144.5,145.6,144.13,145.33,8065646,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-29,144.85,144.94,143.53,143.68,8013444,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-30,143.4,143.82,142.43,142.43,8376092,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-31,142.57,142.57,138.1,138.19,13137396,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-02-01,137.53,140.67,137.0,140.02,9393645,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-02-02,139.02,140.36,137.38,137.68,9262508,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-02-05,136.58,137.0,122.15,130.39,19954145,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-02-06,130.01,132.99,128.0,131.83,19193520,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-02-07,131.89,133.43,131.35,131.42,10550411,JNJ,Johnson & Johnson,Pharmaceuticals
+2018-01-02,84.46,85.0,84.06,84.68,3456665,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-03,84.74,85.415,84.27,85.14,3078426,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-04,85.28,85.8,84.74,85.52,2462477,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-05,86.09,86.75,85.93,86.57,2946328,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-08,86.69,86.709,85.4,86.13,3251430,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-09,86.2,86.42,85.74,86.06,2426331,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-10,85.61,86.17,85.49,86.1,1674588,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-11,86.17,86.59,85.87,86.39,2647480,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-12,86.52,87.408,86.03,86.98,2728878,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-16,85.93,86.59,85.15,85.29,4878301,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-17,85.8,86.361,85.47,86.21,4083343,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-18,86.04,86.14,85.27,85.82,4445813,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-19,86.17,86.28,85.32,85.49,5826917,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-22,83.25,85.57,82.4003,85.44,6374020,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-23,85.18,85.9199,84.24,84.42,5728106,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-24,84.86,85.16,84.28,84.3,5977707,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-25,84.81,85.4,84.56,85.01,5201611,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-26,84.76,87.47,84.76,87.08,6394142,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-29,86.77,88.33,86.65,87.6,5324547,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-30,86.64,86.94,85.21,86.09,5388420,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-31,86.5,86.73,81.27,81.45,10558541,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-02-01,81.54,82.8737,81.29,82.41,8410660,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-02-02,81.88,83.03,81.12,81.18,5152459,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-02-05,80.89,81.61,76.55,77.49,8145221,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-02-06,76.56,79.11,75.71,77.99,10558825,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-02-07,77.76,78.56,76.71,76.72,8240329,LLY,Eli Lilly and Company,Pharmaceuticals
+2018-01-02,56.59,56.745,56.05,56.22,10073010,MRK,Merck & Co.,Pharmaceuticals
+2018-01-03,56.23,56.26,55.96,56.14,10582536,MRK,Merck & Co.,Pharmaceuticals
+2018-01-04,56.44,57.42,56.38,57.05,15030206,MRK,Merck & Co.,Pharmaceuticals
+2018-01-05,57.39,57.39,56.59,56.99,9499053,MRK,Merck & Co.,Pharmaceuticals
+2018-01-08,57.21,57.25,56.5,56.66,11109312,MRK,Merck & Co.,Pharmaceuticals
+2018-01-09,56.81,57.1,56.57,56.8,10631689,MRK,Merck & Co.,Pharmaceuticals
+2018-01-10,56.55,57.37,56.46,57.3,9062360,MRK,Merck & Co.,Pharmaceuticals
+2018-01-11,57.3,57.61,57.16,57.6,7106259,MRK,Merck & Co.,Pharmaceuticals
+2018-01-12,57.95,58.81,57.89,58.66,12343067,MRK,Merck & Co.,Pharmaceuticals
+2018-01-16,61.75,63.78,61.25,62.07,48091315,MRK,Merck & Co.,Pharmaceuticals
+2018-01-17,62.29,62.59,61.89,62.03,21889883,MRK,Merck & Co.,Pharmaceuticals
+2018-01-18,62.0,62.12,60.625,61.13,19905799,MRK,Merck & Co.,Pharmaceuticals
+2018-01-19,61.48,61.48,60.64,61.28,12161865,MRK,Merck & Co.,Pharmaceuticals
+2018-01-22,60.95,61.44,60.72,61.25,12247493,MRK,Merck & Co.,Pharmaceuticals
+2018-01-23,61.03,62.13,60.87,61.7,11181493,MRK,Merck & Co.,Pharmaceuticals
+2018-01-24,62.01,62.11,60.96,61.18,13482091,MRK,Merck & Co.,Pharmaceuticals
+2018-01-25,61.3,61.38,60.95,61.3,9402325,MRK,Merck & Co.,Pharmaceuticals
+2018-01-26,61.49,62.08,61.34,62.04,10553733,MRK,Merck & Co.,Pharmaceuticals
+2018-01-29,61.95,62.14,61.56,61.63,8776884,MRK,Merck & Co.,Pharmaceuticals
+2018-01-30,60.79,61.25,60.44,60.65,13040748,MRK,Merck & Co.,Pharmaceuticals
+2018-01-31,60.77,60.8,58.9,59.25,14869040,MRK,Merck & Co.,Pharmaceuticals
+2018-02-01,59.17,60.34,59.07,59.86,13368001,MRK,Merck & Co.,Pharmaceuticals
+2018-02-02,59.41,59.97,58.28,58.56,12264081,MRK,Merck & Co.,Pharmaceuticals
+2018-02-05,58.27,58.95,55.82,56.4,19605679,MRK,Merck & Co.,Pharmaceuticals
+2018-02-06,55.14,56.77,54.3348,55.46,31006169,MRK,Merck & Co.,Pharmaceuticals
+2018-02-07,55.17,56.71,55.09,55.88,13692483,MRK,Merck & Co.,Pharmaceuticals
+2018-01-02,36.38,36.515,36.24,36.44,16185764,PFE,Pfizer,Pharmaceuticals
+2018-01-03,36.45,36.77,36.23,36.71,13456505,PFE,Pfizer,Pharmaceuticals
+2018-01-04,36.71,36.915,36.6,36.79,12378079,PFE,Pfizer,Pharmaceuticals
+2018-01-05,36.82,36.88,36.61,36.86,12492890,PFE,Pfizer,Pharmaceuticals
+2018-01-08,36.72,36.8,36.33,36.45,18941521,PFE,Pfizer,Pharmaceuticals
+2018-01-09,36.44,36.637,36.36,36.41,16011637,PFE,Pfizer,Pharmaceuticals
+2018-01-10,36.34,36.61,36.31,36.47,17794887,PFE,Pfizer,Pharmaceuticals
+2018-01-11,36.64,36.7,36.42,36.56,14328844,PFE,Pfizer,Pharmaceuticals
+2018-01-12,36.63,36.8,36.46,36.54,19203657,PFE,Pfizer,Pharmaceuticals
+2018-01-16,36.57,36.98,36.47,36.6,28972241,PFE,Pfizer,Pharmaceuticals
+2018-01-17,36.82,37.37,36.765,37.18,24034478,PFE,Pfizer,Pharmaceuticals
+2018-01-18,37.17,37.17,36.7,36.99,18924552,PFE,Pfizer,Pharmaceuticals
+2018-01-19,37.19,37.28,36.5,36.94,29538600,PFE,Pfizer,Pharmaceuticals
+2018-01-22,36.89,37.07,36.73,36.93,20285144,PFE,Pfizer,Pharmaceuticals
+2018-01-23,36.82,37.08,36.54,36.82,17578034,PFE,Pfizer,Pharmaceuticals
+2018-01-24,36.99,37.0701,36.731,36.93,17716499,PFE,Pfizer,Pharmaceuticals
+2018-01-25,36.97,37.34,36.9,37.23,18015415,PFE,Pfizer,Pharmaceuticals
+2018-01-26,37.3,39.09,37.3,39.01,48805858,PFE,Pfizer,Pharmaceuticals
+2018-01-29,39.0,39.43,38.77,39.02,34894666,PFE,Pfizer,Pharmaceuticals
+2018-01-30,38.21,38.75,37.35,37.8,45999703,PFE,Pfizer,Pharmaceuticals
+2018-01-31,37.92,37.99,36.83,37.04,34022734,PFE,Pfizer,Pharmaceuticals
+2018-02-01,36.61,37.395,36.61,36.83,28176379,PFE,Pfizer,Pharmaceuticals
+2018-02-02,36.6,37.25,36.51,36.61,24277891,PFE,Pfizer,Pharmaceuticals
+2018-02-05,36.48,36.7,34.0,34.67,40288128,PFE,Pfizer,Pharmaceuticals
+2018-02-06,34.16,35.475,34.0,35.28,53164235,PFE,Pfizer,Pharmaceuticals
+2018-02-07,35.13,35.65,34.97,34.98,29370002,PFE,Pfizer,Pharmaceuticals
+2018-01-02,87.75,90.82,87.65,89.69,798163,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-03,89.59,89.93,88.86,89.44,868112,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-04,91.58,92.04,89.59,91.08,1597955,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-05,91.41,91.72,89.78,91.18,662790,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-08,91.39,91.39,87.73,90.13,1655186,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-09,90.66,91.115,90.02,90.84,1056960,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-10,90.43,90.875,89.23,90.08,884926,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-11,90.17,92.1599,90.03,91.99,981054,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-12,92.19,92.75,91.09,91.8,559679,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-16,91.19,92.58,90.38,90.86,848824,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-17,90.72,92.36,90.5,91.6,894204,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-18,91.34,91.74,89.37,91.69,1036762,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-19,92.0,92.23,90.66,91.88,1239265,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-22,91.66,93.47,91.53,93.44,765096,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-23,92.6,94.17,92.38,93.99,919086,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-24,94.05,94.805,92.7,93.61,723769,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-25,94.26,94.69,93.72,94.59,692380,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-26,95.06,95.93,94.29,95.15,989263,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-29,93.66,95.035,92.36,92.36,1287825,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-30,90.71,90.99,89.64,90.16,889381,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-31,90.27,90.97,89.49,90.62,1203185,PRGO,Perrigo Company,Pharmaceuticals
+2018-02-01,90.63,92.3,90.63,90.96,793160,PRGO,Perrigo Company,Pharmaceuticals
+2018-02-02,90.72,91.06,89.88,90.4,859882,PRGO,Perrigo Company,Pharmaceuticals
+2018-02-05,90.22,90.66,86.84,86.89,1215950,PRGO,Perrigo Company,Pharmaceuticals
+2018-02-06,86.34,88.575,85.84,88.04,1154939,PRGO,Perrigo Company,Pharmaceuticals
+2018-02-07,87.2,88.43,86.98,87.52,744747,PRGO,Perrigo Company,Pharmaceuticals
+2018-01-02,72.54,72.59,71.465,71.77,2135564,ZTS,Zoetis,Pharmaceuticals
+2018-01-03,71.77,72.18,71.34,72.1,2328506,ZTS,Zoetis,Pharmaceuticals
+2018-01-04,72.75,72.9128,72.26,72.53,2534010,ZTS,Zoetis,Pharmaceuticals
+2018-01-05,72.83,73.92,72.57,73.36,2166065,ZTS,Zoetis,Pharmaceuticals
+2018-01-08,73.43,74.42,73.1607,74.24,3631552,ZTS,Zoetis,Pharmaceuticals
+2018-01-09,74.7,75.475,74.465,75.11,2721946,ZTS,Zoetis,Pharmaceuticals
+2018-01-10,74.58,74.8,73.28,73.91,2257464,ZTS,Zoetis,Pharmaceuticals
+2018-01-11,74.05,74.68,73.72,74.59,1629279,ZTS,Zoetis,Pharmaceuticals
+2018-01-12,74.91,75.69,74.77,75.39,1915669,ZTS,Zoetis,Pharmaceuticals
+2018-01-16,76.06,76.4,75.21,75.54,2599094,ZTS,Zoetis,Pharmaceuticals
+2018-01-17,75.81,77.03,75.39,76.77,2769587,ZTS,Zoetis,Pharmaceuticals
+2018-01-18,76.65,76.65,75.85,76.33,2588995,ZTS,Zoetis,Pharmaceuticals
+2018-01-19,76.69,76.91,76.22,76.62,4829602,ZTS,Zoetis,Pharmaceuticals
+2018-01-22,76.67,77.58,76.62,77.48,4195103,ZTS,Zoetis,Pharmaceuticals
+2018-01-23,77.3,78.32,76.97,77.59,2264132,ZTS,Zoetis,Pharmaceuticals
+2018-01-24,78.16,78.51,77.6,78.33,2585326,ZTS,Zoetis,Pharmaceuticals
+2018-01-25,78.47,79.38,78.345,79.25,2327262,ZTS,Zoetis,Pharmaceuticals
+2018-01-26,79.49,80.13,79.38,80.09,2532808,ZTS,Zoetis,Pharmaceuticals
+2018-01-29,79.81,79.95,79.11,79.18,2662383,ZTS,Zoetis,Pharmaceuticals
+2018-01-30,78.44,78.69,77.91,78.35,3808707,ZTS,Zoetis,Pharmaceuticals
+2018-01-31,78.49,78.77,76.54,76.73,4136360,ZTS,Zoetis,Pharmaceuticals
+2018-02-01,76.84,78.27,76.69,77.82,2982259,ZTS,Zoetis,Pharmaceuticals
+2018-02-02,77.53,78.12,76.73,76.78,2595187,ZTS,Zoetis,Pharmaceuticals
+2018-02-05,76.64,76.92,73.18,73.83,2962031,ZTS,Zoetis,Pharmaceuticals
+2018-02-06,72.74,74.56,72.13,73.27,4924323,ZTS,Zoetis,Pharmaceuticals
+2018-02-07,72.7,75.0,72.69,73.86,4534912,ZTS,Zoetis,Pharmaceuticals
