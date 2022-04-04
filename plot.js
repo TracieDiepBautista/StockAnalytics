@@ -104,26 +104,26 @@
 
   // create a trace for BUBBLE chart: 
 
-        var bubble_values = [{
-          x: otu_id,
-          y: sample_value,
-          text: otu_labels,
+        var bank_bub_values = [{
+          x: bankname,
+          y: bankvolumes,
+          text: bankvolumes,
           mode: "markers",
           marker: {
-              color: otu_id,
-              size: sample_value,
+              color: bankname,
+              size: bankvolumes,
               colorscale: "continent"
         }
       }]
 
         // Define bubble layout format:   
-        var layout = {
-          title: "Belly Button Samples",
-          xaxis: {title: "OTU IDs"},
-          yaxis: {title: "Sample Values"}
+        var bank_bub_layout = {
+          title: "15 Stocks volumes in Banking Industry",
+          xaxis: {title: "Bank stocks"},
+          yaxis: {title: "Volume"}
         }
 
-        Plotly.newPlot("bubble", bubble_values, layout)
+        Plotly.newPlot("bubble", bank_bub_values, bank_bub_layout)
 
 // Function for tech industry:
 
@@ -158,7 +158,28 @@
       }
       
       Plotly.newPlot("line", tech_line_values, tech_line_format)
+  // create a trace for BUBBLE chart: 
 
+        var tech_bub_values = [{
+          x: techname,
+          y: techvolumes,
+          text: techvolumes,
+          mode: "markers",
+          marker: {
+              color: techname,
+              size: techvolumes,
+              colorscale: "continent"
+        }
+      }]
+
+        // Define bubble layout format:   
+        var tech_bub_layout = {
+          title: "15 Stocks volumes in technology Industry",
+          xaxis: {title: "technology stocks"},
+          yaxis: {title: "Volume"}
+        }
+
+        Plotly.newPlot("bubble", tech_bub_values, tech_bub_layout)
 //Function for Pharmaceutical industry:
       
   function James(PharmValue) {
@@ -182,3 +203,26 @@
     }
     
     Plotly.newPlot("line", pharm_line_values, pharm_line_format)
+
+      // create a trace for BUBBLE chart: 
+
+      var pharm_bub_values = [{
+        x: pharmname,
+        y: pharmvolumes,
+        text: pharmvolumes,
+        mode: "markers",
+        marker: {
+            color:pharmname,
+            size: pharmvolumes,
+            colorscale: "continent"
+      }
+    }]
+
+      // Define bubble layout format:   
+      var pharm_bub_layout = {
+        title: "15 Stocks volumes in pharmaceutical Industry",
+        xaxis: {title: "pharmaceutical stocks"},
+        yaxis: {title: "Volume"}
+      }
+
+      Plotly.newPlot("bubble", pharm_bub_values, pharm_bub_layout)
