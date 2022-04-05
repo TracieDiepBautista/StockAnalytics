@@ -1,29 +1,29 @@
 
 // initial page (Home page)
 // FUNCTION 1, set init() for dashboard and do dropdown button
-// function init() {
+ function init() {
 
 //   // select dropdown menu 
-//   var dropdown = d3.select("navbardrop");
+   var dropdown = d3.select("#selectData");
   
 //   // read the data 
-//   d3.json("finance.json").then((data)=> {
-//     console.log(data)
+   d3.json("bank.json").then((data)=> {
+    console.log(data)
   
 //     // get the stockname data to the dropdwown menu
-//     data.names.forEach(function(name) {
-//         dropdown.append("option").text(name).property("value",name);
-//     });
-//     getPriceInfo("Finance")
-//     tracie("Finance")
-//   });
-//   }
+     data.names.forEach(function(Name) {
+       dropdown.append("option").text(Name).property("value",Name);
+     });
+     getPriceInfo("Name")
+     tracie("Name")
+      });
+   }
   
-//   init();
+   init();
   
   // Function 4, to get the necessary data for demographic box
   
-  function getPriceInfo(id) {
+  function getPriceInfo(Name) {
   
     // read the json file to get data
         d3.json("bank.json").then((data)=> {
@@ -53,9 +53,9 @@
     // FUNCTION 3, use function to do the change event
   //(user click and change the id with appropriate content box)
   
-  function optionChanged(id) {
-    getPriceInfo(id);
-    tracie(id);
+  function optionChanged(Name) {
+    getPriceInfo(Name);
+    tracie(Name);
   }
   
   // Find the values for charts
@@ -67,7 +67,7 @@
   function tracie(BankValue) {
     // var selector = d3.select("#selDataset");
       d3.json("bank.json").then((databank) => {
-        // console.log(data)
+        console.log(data)
   
         var bankprices = databank.close
         console.log(bankprices)
@@ -123,63 +123,65 @@
           yaxis: {title: "Volume"}
         }
 
-        Plotly.newPlot("bubble", bank_bub_values, bank_bub_layout)
+        Plotly.newPlot("bubble", bank_bub_values, bank_bub_layout);
+
 
 // Function for tech industry:
 
-  function Luan(TechStocks)
-      d3.json("tech.json").then((datatech) => {
-        // console.log(data)
+  // function Luan(TechStocks)
+  //     d3.json("tech.json").then((datatech) => {
+  //       // console.log(data)
 
-        var techprices = datatech.close
-        console.log(techprices)
+  //       var techprices = datatech.close
+  //       console.log(techprices)
 
-        var techvolumes = datatech.volume
-        console.log(techvolumes)
+  //       var techvolumes = datatech.volume
+  //       console.log(techvolumes)
 
-        var techtimedate = datatech.date
+  //       var techtimedate = datatech.date
 
-        var techname = datatech.Name
+  //       var techname = datatech.Name
 
-        // create a Trace for plotting:
-        var tech_line_values = [{
-          x : techtimedate,
-          y : techprices,
-          text: techname,
-          type: "line",
-          marker: {color: "green"},
-      }]
+  //       // create a Trace for plotting:
+  //       var tech_line_values = [{
+  //         x : techtimedate,
+  //         y : techprices,
+  //         text: techname,
+  //         type: "line",
+  //         marker: {color: "green"},
+  //     }]
       
-    // define the bar layout format: 
-      var tech_line_format = {
-          title: "7 Stocks Trends in Technology Industry",
-          xaxis: "Timeseries (one-year 2018)",
-          yaxis: "Close Prices"
-      }
+  //   // define the bar layout format: 
+  //     var tech_line_format = {
+  //         title: "7 Stocks Trends in Technology Industry",
+  //         xaxis: "Timeseries (one-year 2018)",
+  //         yaxis: "Close Prices"
+  //     }
       
-      Plotly.newPlot("line", tech_line_values, tech_line_format)
-  // create a trace for BUBBLE chart: 
+  //     Plotly.newPlot("line", tech_line_values, tech_line_format)
+  // // create a trace for BUBBLE chart: 
 
-        var tech_bub_values = [{
-          x: techname,
-          y: techvolumes,
-          text: techvolumes,
-          mode: "markers",
-          marker: {
-              color: techname,
-              size: techvolumes,
-              colorscale: "continent"
-        }
-      }]
+  //       var tech_bub_values = [{
+  //         x: techname,
+  //         y: techvolumes,
+  //         text: techvolumes,
+  //         mode: "markers",
+  //         marker: {
+  //             color: techname,
+  //             size: techvolumes,
+  //             colorscale: "continent"
+  //       }
+  //     }]
 
-        // Define bubble layout format:   
-        var tech_bub_layout = {
-          title: "15 Stocks volumes in technology Industry",
-          xaxis: {title: "technology stocks"},
-          yaxis: {title: "Volume"}
-        }
+  //       // Define bubble layout format:   
+  //       var tech_bub_layout = {
+  //         title: "15 Stocks volumes in technology Industry",
+  //         xaxis: {title: "technology stocks"},
+  //         yaxis: {title: "Volume"}
+  //       }
 
-        Plotly.newPlot("bubble", tech_bub_values, tech_bub_layout)
+  //       Plotly.newPlot("bubble", tech_bub_values, tech_bub_layout);
+  //     })
 //Function for Pharmaceutical industry:
       
   function James(PharmValue) {
@@ -225,4 +227,7 @@
         yaxis: {title: "Volume"}
       }
 
-      Plotly.newPlot("bubble", pharm_bub_values, pharm_bub_layout)
+      Plotly.newPlot("bubble", pharm_bub_values, pharm_bub_layout);
+    })
+  }
+      })};
