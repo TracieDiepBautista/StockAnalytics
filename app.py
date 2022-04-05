@@ -5,7 +5,7 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 
-from flask import Flask, jsonify
+from flask import Flask, render_template, jsonify
 
 #################################################
 # Database Setup
@@ -14,17 +14,7 @@ engine = create_engine("sqlite:///resources/allstock.sqlite")
 connection = engine.connect()
 
 # Execute sql query
-stocks = engine.execute("SELECT * FROM Stocks LIMIT 1000").all()
-
-# reflect an existing database into a new model
-Base = automap_base()
-
-# reflect the tables
-Base.prepare(engine, reflect=True)
-
-print(Base.classes.keys())
-# stocks = Base.classes.Stocks
-# print(stocks)
+stocks = engine.execute("SELECT * FROM Stocks WHERE date >= '2017-01-01'").all()
 
 #################################################
 # Flask Setup
@@ -34,9 +24,8 @@ app = Flask(__name__)
 #################################################
 # Flask Routes
 #################################################
-
 @app.route("/")
-def welcome():
+def home():
     """List all available api routes."""
     return (
         f"Available Routes:<br/>"
@@ -44,7 +33,7 @@ def welcome():
     )
 
 @app.route("/api/v1.0/all_stocks")
-def names():
+def all_stocks():
     # Create our session (link) from Python to the sqlite
     session = Session(engine)
 
@@ -52,6 +41,7 @@ def names():
     # Query all stocks
     results = stocks
 
+    # Close session
     session.close()
 
     all_stocks = []
@@ -71,5 +61,9 @@ def names():
 
     return jsonify(all_stocks)
 
+# @app.route("/api/v1.0/")
+# def ():
+#     return()
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug = True)
