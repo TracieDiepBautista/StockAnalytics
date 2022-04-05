@@ -19,7 +19,6 @@
       //  tracie("Name")
         });
 
-    
     //  init();
       
       // Function 4, to get the necessary data for demographic box
