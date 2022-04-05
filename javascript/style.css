@@ -1,12 +1,13 @@
-/* body {
-    padding-top: 56px; */
-    /* font-weight: 300; */
-    /* font-style: whitesmoke; */
-    /* letter-spacing: 0.03em; */
-    /* background-color:black;
-  }
+ /* body {
+    padding-top: 56px;
+    font-weight: 300;
+    font-size: 12px;
+    font-style: whitesmoke;
+    letter-spacing: 0.03em;
+    background-color:black;
+  } */
   
-  nav.navbar {
+  /* nav.navbar {
     border-bottom: solid 1px #d6d6d6;
   }
   
@@ -31,8 +32,8 @@
   .spacer {
     height: 40vh;
   }
-  
-  .rectangle {
+   */
+  /* .rectangle {
     position: absolute;
     width: 97vw;
     height: 30vw;
@@ -93,9 +94,9 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
-  }
+  } */
   
-  #one .elem .blocks > div {
+  /* #one .elem .blocks > div {
     height: 20px;
     width: 20px;
     margin: 2px;
@@ -162,7 +163,7 @@
   ul.dashed > li:before {
     content: "-";
     text-indent: -20px;
-  }
+  } */
 
 /* Centered text */
 .centered {
