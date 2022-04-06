@@ -1,25 +1,40 @@
 
 // initial page (Home page)
 // FUNCTION 1, set init() for dashboard and do dropdown button
-// function init() {
+//  function init() {
 
-  //   // select dropdown menu 
-    //  var dropdown = d3.select("#selectData");
+//   //   // select dropdown menu 
+//     var dropdown = d3.select("#selectData");
     
   //   // read the data 
-     d3.json("bank.json").then((data)=> {
-      console.log(data)
-      console.log(data.name)
-      
-  //     // get the stockname data to the dropdwown menu
+
+  // function tracie(BankValue) {
+
+     d3.json("resources/bank30.json").then((data)=> {
+      // console.log(data)
+      // console.log(data[0].Name)
+
+      let bankname = data.map(x => x.Name)
+      console.log(bankname)
+
+      let close_price = data.map(y => y.close)
+      console.log(close_price)
+
+      let banktime = data.map(z => z.date)
+      console.log(banktime)
+
+      // var bank_price = close_price.filter(priceObj => priceObj.close == BankValue)
+      // console.log(bank_price)
+
+    // get the stockname data to the dropdwown menu
       //  data.names.forEach(function(Name) {
       //    dropdown.append("option").text(Name).property("value",Name);
       //  });
       //  getPriceInfo("Name")
       //  tracie("Name")
-        });
+      //   });
 
-    //  init();
+      // init();
       
       // Function 4, to get the necessary data for demographic box
       
@@ -53,55 +68,39 @@
     //     // FUNCTION 3, use function to do the change event
     //   //(user click and change the id with appropriate content box)
       
-    //   function optionChanged(Name) {
-    //     getPriceInfo(Name);
-    //     tracie(Name);
-    //   }
+      // function optionChanged(Name) {
+      //   getPriceInfo(Name);
+      //   tracie(Name);
+      // }
       
       // Find the values for charts
       // Create the 1st function to get data set out and use further:
       // & use d3 to call the data from json file and put them in a place we name "data" to use further
       
     //Function for Bank industry: 
-      
-      function tracie(BankValue) {
-        // var selector = d3.select("#selDataset");
-          d3.json("bank.json").then((databank) => {
-            console.log(data)
-            console.log(data.date)
-            var bankprices = databank.close
-            console.log(bankprices)
-      
-            var bankvolumes = databank.volume
-            console.log(bankvolumes)
     
-            var banktimedate = databank.date
-    
-            var bankname = databank.Name
-            
-            // var filteredprice = closeprice.filter(priceObj => priceObj.close == StockValue)[1]
-      
-            // var filteredvolumes = volumes.filter(volumeObj => volumeObj.id == StockValue)[1]
          
       // create a Trace for plotting:
     
-            var trace1 = [{
-                x : banktimedate,
-                y : bankprices,
-                text: bankname,
-                type: "line",
-                marker: {color: "red"},
-            }]
+      var trace1 = {
+          x : banktime,
+          y : close_price,
+          text: bankname,
+           type: "scatter",
+           marker: {color: "red"}
+      }
            
-            var data = [trace1]
-          // define the bar layout format: 
-            var layout = {
-                title: "15 Stocks Trends in Banking Industry",
-                xaxis: "Timeseries (one-year 2018)",
-                yaxis: "Close Prices"
-            }
-            
-            Plotly.newPlot("line", data, layout);
+      var data = [trace1]
+    // define the bar layout format: 
+      var layout = {
+          title: "03 Stocks Trends in Banking Industry",
+          xaxis: {title: "Observed time (one-year 2018)"},
+          yaxis: {title: "Close Prices"}
+      }
+      
+      Plotly.newPlot("line", data, layout)
+  })
+;
 
     
       // create a trace for BUBBLE chart: 
@@ -380,5 +379,4 @@
     
       //     Plotly.newPlot("bubble", pharm_bub_values, pharm_bub_layout);
       //   })
-      // }
-          })};
+       
