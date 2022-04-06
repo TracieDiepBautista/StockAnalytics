@@ -33,6 +33,7 @@
     - chart.js (javaScript library)
     - 
     - Link to dataset: https://www.kaggle.com/code/faressayah/stock-market-analysis-prediction-using-lstm/data
+    - Link to picture: https://pxhere.com/en/photo/980500
     
     
 ```diff
