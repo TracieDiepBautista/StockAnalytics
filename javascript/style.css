@@ -3,11 +3,21 @@ body {
   background-color:black;
 }
 
+.title-border {
+  padding: 20px 20px 20px 70px;
+  border-style: inset double double inset;
+  border-top-color: maroon;
+  border-right-color: maroon;
+  border-bottom-color: maroon; 
+  border-left-color: maroon;
+  border-width: 5px 5px 5px 5px;
+}
+
 /* Banner CSS */
 .content-banner {
   height: 500px;
   text-align: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-box-sizing: border-box;
@@ -41,6 +51,7 @@ body {
   transform: translate(-50%, -50%);
   font-size: 75px;
   font-weight: 500;
+  color: goldenrod
 }
 
 /* Navbar formatting */
@@ -64,9 +75,9 @@ body {
 .home-content-format {
   padding: 20px 20px 20px 70px;
   border-style: inset none none inset;
-  border-top-color: white;
+  border-top-color: maroon;
   border-left-color: gold;
-  border-width: 5px 0px 0px 20px;
+  border-width: 5px 0px 0px 15px;
 }
 
 
@@ -83,6 +94,55 @@ body {
   } */
 }
 
+
+/* body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: black;
+} */
+
+.panel-default > .panel-heading-custom {
+  background: charcoalgray; color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.jumbotron > h1 {
+  text-shadow: 1px 1px 2px black;
+}
+
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: whitesmoke;
+  background-color: darkred;
+  background-size: 100%;
+  text-align: center;  
+}
+
+.panel-primary>.panel-heading {
+  color: whitesmoke;
+  background-color: darkred;
+  border-color: darkred;
+}
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: darkred;
+  border: 1px solid darkred transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+}
 
 /* 
 .rectangle {
