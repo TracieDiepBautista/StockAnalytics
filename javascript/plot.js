@@ -7,7 +7,7 @@ function init() {
   var dropdown = d3.select("#selectData");
 
   //   // read the data 
-  d3.json("./javascript/bank.json").then((data) => {
+  d3.json("bank.json").then((data) => {
     // console.log(data);
 
     var result = data[0];
@@ -18,13 +18,16 @@ function init() {
         const element = data[index];
         // Object.entries(element)
         // console.log(element.Name);
+        
         element.map(myfunction)
         function myfunction(Object){
           return Object.Name
+          
         }
 
+        // let namesAndAgesArrow = princesses.map(princess => `${princess.name}: ${princess.age}`);
 
-
+        // console.log("Names and Ages:", namesAndAgesArrow);
 
         // console.log(element)
       }
