@@ -64,12 +64,21 @@
         </div>
       </div>
 
+
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-4">
           <div class="well">
-            <h5>Stock Name:</h5>
-            <select id="selectData" onchange="optionChanged(this.value)"></select>
+            <h5>Bank Stock Name:</h5>
+             
+            <!-- <select id="selectData" onchange="optionChanged(this.value)"></select> -->
+            <!-- change the value of the select element to the correct file -->
+            <select name="bankstocks" id="selectData">
+              <option value="resources/bank30.json">Wells Fargo & Company</option>
+              <option value="resources/bank1mo.json">JPMorgan Chase & Co</option>
+              <option value="resources/bank30.json">Bank of America</option>
+            </select>
           </div>
+          <!-- </div> -->
 
           <div class="panel panel-primary">
             <div class="panel-heading">
@@ -99,7 +108,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="plotboxplot.js"></script>
+    <script src="brandon.js"></script>
       
   </body>
 
