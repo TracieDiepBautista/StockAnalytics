@@ -59,48 +59,57 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 jumbotron text-center">
-          <h1>TECHNOLOGY STOCK TRENDS</h1>
+          <h1>Technology Stock Trends</h1>
           <p>Use the interactive charts below to explore the Trends and Patterns</p>
         </div>
       </div>
 
+
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-4">
           <div class="well">
             <h5>Stock Name:</h5>
-            <select id="selectData" onchange="optionChanged(this.value)"></select>
+             
+            <!-- <select id="selectData" onchange="optionChanged(this.value)"></select> -->
+            <!-- change the value of the select element to the correct file -->
+            <select name="bankstocks" id="selectData">
+              <option value="resources/APL1mo.json">Apple</option>
+              <option value="resources/SEA1mo.json">Seagate Technology Holdings</option>
+              <option value="resources/WTD1mo.json">Western Digital</option>
+            </select>
           </div>
+          <!-- </div> -->
+
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">Stock Market Capital</h3>
+              <h3 class="panel-title">Portfolio Data</h3>
             </div>
             <div id="sample-metadata" class="panel-body"></div>
           </div>
         </div>
-
-        <div class="col-md-5">
-          <div id="line"></div>
-        </div>
-
+        
         <div class="col-md-5">
           <div id="boxplot"></div>
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="line"></div>
+        <div class="col-md-13">
           <div id="bubble"></div>
         </div>
       </div>
-    </div>
+    </div>    
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="javascript/plot.js"></script>
-  
+    <script src="brandon.js"></script>
+      
   </body>
 
 </html>
