@@ -130,7 +130,7 @@ function buildcharts(dataset) {
       showlegend: false, 
       xaxis: {
         autorange: true, 
-        rangeslider: {range: ['2017-01-17 12:00', '2017-02-10 12:00']}, 
+        rangeslider: {range: ['2018-01-01 12:00', '2018-02-10 12:00']}, 
         title: 'Date', 
         type: 'date'
       }, 
@@ -141,7 +141,7 @@ function buildcharts(dataset) {
       
       annotations: [
         {
-          x: '2017-01-31',
+          x: '2018-01-01',
           y: 0.9,
           xref: 'x',
           yref: 'paper',
@@ -159,9 +159,9 @@ function buildcharts(dataset) {
               type: 'rect',
               xref: 'x',
               yref: 'paper',
-              x0: '2017-01-31',
+              x0: '2018-01-01',
               y0: 0,
-              x1: '2017-02-01',
+              x1: '2018-02-10',
               y1: 1,
               fillcolor: '#d3d3d3',
               opacity: 0.2,

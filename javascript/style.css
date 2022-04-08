@@ -5,12 +5,13 @@ body {
 
 .title-border {
   padding: 20px 20px 20px 70px;
-  border-style: inset double double inset;
+  border-style: inset inset inset inset;
   border-top-color: maroon;
   border-right-color: maroon;
   border-bottom-color: maroon; 
   border-left-color: maroon;
   border-width: 5px 5px 5px 5px;
+  background-color: darkred;
 }
 
 /* Banner CSS */
@@ -46,12 +47,12 @@ body {
 /* Banner text formatting */
 .text-banner {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 75px;
+  font-size: 30px;
   font-weight: 500;
-  color: goldenrod
+  color: white;
 }
 
 /* Navbar formatting */
@@ -76,7 +77,7 @@ body {
   padding: 20px 20px 20px 70px;
   border-style: inset none none inset;
   border-top-color: maroon;
-  border-left-color: gold;
+  border-left-color: darkred;
   border-width: 5px 0px 0px 15px;
 }
 
