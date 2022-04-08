@@ -59,7 +59,7 @@
     ii) Roadmap_TaskList: Mood & Tone direction and Project tasklists with 
         timeline management.
     iii) resources: data sources and other manipulated results.
-    iv) pandasDatamanipulation_jy.ipynb: codes to manipulate big data / statistics 
+    iv) pandasDatamanipulation folder: codes to manipulate big data / statistics 
         and connect to SQL database.
     v) all .html files: codes for the website from Home page to content landing page.
     vi) javascript folder with style.css: codes for website styling and formating.
