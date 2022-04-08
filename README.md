@@ -1,6 +1,15 @@
 ## Stock Trends Analysis
 
 ```diff
+- Webpage and Repo:
+```
+    - Github Page
+      https://traciediepbautista.github.io/StockAnalytics/index.html
+
+    - Github Repo
+      https://github.com/TracieDiepBautista/StockAnalytics
+
+```diff
 - Project scenario:
 ```
 
@@ -8,7 +17,7 @@
       of price movements and consult the Board of Investment on what the data is telling about. 
     - The story will be told by interactive visualization website.
     - The next level of this Project will be: Stock Price Prediction on a specific one and consult the Investors 
-      the potentiality of purshasing. 
+      the potentiality of purshasing.
     
 ```diff
 - Team members:

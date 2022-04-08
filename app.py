@@ -10,7 +10,7 @@ from flask import Flask, render_template, jsonify
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///resources/allstock.sqlite")
+engine = create_engine("sqlite:///sql/allstock.sqlite")
 connection = engine.connect()
 
 # Execute sql query
@@ -30,6 +30,9 @@ def home():
     return (
         f"Available Routes:<br/>"
         f"/api/v1.0/all_stocks<br/>"
+        f"<br>"
+        f"Return Home Link (copy into search bar)<br>"
+        f"https://traciediepbautista.github.io/StockAnalytics/index.html"
     )
 
 @app.route("/api/v1.0/all_stocks")
